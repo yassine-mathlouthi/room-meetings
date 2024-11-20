@@ -60,9 +60,13 @@ $result = $conn->query("SELECT * FROM rooms");
 
 <?php include 'views/header.php'; ?>
 
-<div class="container mt-4">
-    <h2 class="mb-4">Add a New Meeting Room</h2>
+<div class="container-fluid mt-4">
+<div class="row">
+        <div class="col-3 mx-auto ">
+        <h2>/Add a meeting room</h2>
 
+        </div>
+    </div>
     <!-- Display any error or success message -->
     <?php if (isset($success_message)): ?>
         <div class="alert alert-success"><?php echo $success_message; ?></div>
@@ -71,8 +75,8 @@ $result = $conn->query("SELECT * FROM rooms");
     <?php endif; ?>
 
     <!-- Add Room Form -->
-    <form method="post" class="mb-5" enctype="multipart/form-data">
-        <div class="form-group">
+    <form method="post" enctype="multipart/form-data" class="col-md-8 mx-auto card shadow card-body mt-4">
+        <div class="form-group" >
             <label for="name">Room Name:</label>
             <input type="text" name="name" id="name" class="form-control" required>
         </div>
@@ -93,7 +97,7 @@ $result = $conn->query("SELECT * FROM rooms");
             <input type="file" name="image" id="image" class="form-control" accept="image/*">
         </div>
         
-        <button type="submit" class="btn btn-primary">Add Room</button>
+        <button type="submit"class="btn book_room_btn"> <i class="fas fa-add"></i> Add Room</button>
     </form>
 
     <!-- Room List -->

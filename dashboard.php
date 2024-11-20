@@ -38,9 +38,9 @@ $result = $conn->query($query);
     </div>
     
     <?php if (is_admin()): ?>
-        <h3>All Booked Rooms</h3>
+        <h3>Booked Rooms</h3>
         <?php if ($result->num_rows > 0): ?>
-            <table class="table table-bordered">
+            <table class="table table-bordered  table-custom">
                 <thead>
                     <tr>
                         
@@ -64,7 +64,7 @@ $result = $conn->query($query);
                             <td><?php echo $booking['end_time']; ?></td>
                             <td><?php echo $booking['user_email']; ?></td>
                             <td>
-                                <a href="delete_booking.php?id=<?php echo $booking['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this booking?');">
+                                <a href="delete_booking.php?id=<?php echo $booking['id']; ?>" class="btn delete_btn" onclick="return confirm('Are you sure you want to delete this booking?');">
                                     <i class="fas fa-trash-alt"></i> Delete
                                 </a>
                             </td>
