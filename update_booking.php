@@ -1,7 +1,7 @@
 <?php
 include 'includes/config.php';
 include 'includes/functions.php';
-
+include 'views/header.php';
 // Check if user is logged in and has the right permissions
 if (!is_logged_in()) {
     redirect('login.php'); // Redirect to login if the user is not authenticated
@@ -49,8 +49,13 @@ $rooms_result = $conn->query($rooms_query);
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
       crossorigin="anonymous">
 
-<div class="container mt-4">
-    <h2>Update Booking</h2>
+<div class="container-fluid">
+<div class="row">
+        <div class="col-5 mx-auto">
+        <h2>/Update booking of room : <?php $room = $rooms_result->fetch_assoc() ; echo $room['name'] ?> </h2>
+
+        </div>
+    </div>
 
     <?php if (isset($success_message)): ?>
         <div class="alert alert-success"><?php echo $success_message; ?></div>
@@ -61,8 +66,10 @@ $rooms_result = $conn->query($rooms_query);
     <?php endif; ?>
 
     <!-- Booking Update Form -->
-    <form method="post">
-        <div class="mb-3">
+    <div class="row">
+
+    <form method="post" class="col-md-8 mx-auto card shadow card-body mt-4">
+        <div class="mb-3 ">
             <label for="room_id" class="form-label">Select Room:</label>
             <select name="room_id" id="room_id" class="form-control" required>
                 <?php while ($room = $rooms_result->fetch_assoc()): ?>
@@ -88,8 +95,11 @@ $rooms_result = $conn->query($rooms_query);
             <input type="time" name="end_time" id="end_time" class="form-control" value="<?php echo $booking['end_time']; ?>" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Booking</button>
+        <button type="submit" class="btn update_btn" >
+                                    <i class="fas fa-edit"></i> Update </button>
     </form>
+    </div>
+   
 </div>
 
 <!-- Include Bootstrap JS -->

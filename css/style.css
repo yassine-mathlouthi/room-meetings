@@ -5,12 +5,42 @@ body {
 }
 
 .navbar {
-    background-color: #007bff;
     color: white;
-    padding: 1rem;
 }
 
 .container {
     margin: 20px auto;
     max-width: 800px;
 }
+.table-custom th{
+    background-color: rgb(190, 199, 211);
+}
+.table-custom tr:hover{
+    background-color: rgb(238, 245, 253);
+}
+.delete_btn{
+    background-color: rgb(255, 144, 144);
+}
+.delete_btn:hover{
+    background-color: rgb(255, 80, 80);
+}
+.update_btn:hover{
+    background-color: rgb(255, 245, 222);;
+
+
+}
+.book_room_btn{
+    background-color:rgb(243, 248, 253); ;
+}
+.btn:hover {
+    
+    transform: translateY(-5px); 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.book_room_btn:hover{
+    background-color: rgb(190, 221, 252);
+    
+}
+

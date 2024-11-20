@@ -38,9 +38,13 @@ $rooms_result = $conn->query($rooms_query);
 
 <?php include 'views/header.php'; ?>
 
-<div class="container">
-    <h2>Book a Meeting Room</h2>
+<div class="container-fluid">
+<div class="row">
+        <div class="col-3 mx-auto mb-4">
+        <h2>/Book a room</h2>
 
+        </div>
+    </div>
     <?php if (isset($success_message)): ?>
         <div class="alert alert-success"><?php echo $success_message; ?></div>
     <?php endif; ?>
@@ -58,7 +62,7 @@ $rooms_result = $conn->query($rooms_query);
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $room['name']; ?></h5>
                         <p class="card-text"><?php echo $room['location']; ?></p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal" data-roomid="<?php echo $room['id']; ?>" data-roomname="<?php echo $room['name']; ?>">Book This Room</button>
+                        <button class="btn book_room_btn" data-toggle="modal" data-target="#bookingModal" data-roomid="<?php echo $room['id']; ?>" data-roomname="<?php echo $room['name']; ?>"><i class="fas fa-add"></i> Book This Room</button>
                     </div>
                 </div>
             </div>
@@ -66,6 +70,7 @@ $rooms_result = $conn->query($rooms_query);
     </div>
 
     <!-- Modal to show booking form -->
+    
     <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -94,7 +99,7 @@ $rooms_result = $conn->query($rooms_query);
                             <input type="time" name="end_time" id="end_time" class="form-control" required>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Book Room</button>
+                        <button type="submit" class="btn "> <i class="fas fa-add"></i> Book Room</button>
                     </form>
                 </div>
             </div>

@@ -29,8 +29,13 @@ if (is_admin()) {
 $result = $conn->query($query);
 ?>
 
-<div class="container">
-    <h2>Welcome to your dashboard</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 mx-auto ">
+        <h2>/Dashboard</h2>
+
+        </div>
+    </div>
     
     <?php if (is_admin()): ?>
         <h3>All Booked Rooms</h3>
@@ -71,9 +76,19 @@ $result = $conn->query($query);
             <p>No bookings found.</p>
         <?php endif; ?>
     <?php else: ?>
-        <h3>Your Booked Rooms</h3>
+        <div class="row">
+            <div class="col">
+            <a href="book_room.php" class="btn book_room_btn"> <i class="fas fa-add"></i> Book a new Room</a>
+            </div>
+        </div>
+        
+ 
+        
+        
+        
+        <h3>Booked Rooms table : </h3>
         <?php if ($result->num_rows > 0): ?>
-            <table class="table table-bordered">
+            <table class="table table-bordered table-custom">
                 <thead>
                     <tr>
                         
@@ -95,10 +110,10 @@ $result = $conn->query($query);
                             <td><?php echo $booking['start_time']; ?></td>
                             <td><?php echo $booking['end_time']; ?></td>
                             <td>
-                                <a href="delete_booking.php?id=<?php echo $booking['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this booking?');">
+                                <a href="delete_booking.php?id=<?php echo $booking['id']; ?>" class="btn delete_btn" onclick="return confirm('Are you sure you want to delete this booking?');">
                                     <i class="fas fa-trash-alt"></i> Delete
                                 </a>
-                                <a href="update_booking.php?id=<?php echo $booking['id']; ?>" class="btn " >
+                                <a href="update_booking.php?id=<?php echo $booking['id']; ?>" class="btn update_btn" >
                                     <i class="fas fa-edit"></i> Update
                                 </a>
                             </td>
@@ -109,7 +124,6 @@ $result = $conn->query($query);
         <?php else: ?>
             <p>You have not booked any rooms yet.</p>
         <?php endif; ?>
-        <a href="book_room.php">Book a Room</a>
     <?php endif; ?>
 </div>
 
