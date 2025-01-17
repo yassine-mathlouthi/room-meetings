@@ -14,11 +14,8 @@ class EmailService
             require_once("./libs/sendgrid-php/sendgrid-php.php");
 
             // Log API key check
-            $apiKey = "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";
-            /*if (!$apiKey) {
-                error_log("SendGrid API key is missing");
-                throw new Exception("SendGrid API key not found");
-            }*/
+            //$apiKey = "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";
+           
 
             $this->sendgrid = new \SendGrid($apiKey);
             $this->senderEmail = "chbinoumed06@gmail.com";
