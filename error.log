@@ -1,0 +1,147 @@
+[17-Jan-2025 19:09:48 Europe/Berlin] Email sending error: Unknown column 'first_name' in 'field list'
+[17-Jan-2025 19:12:07 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:12:07 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:12:07 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:17:31 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:17:31 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:17:31 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:21:49 Europe/Berlin] PHP Warning:  Undefined array key 1 in D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php on line 13
+[17-Jan-2025 19:21:49 Europe/Berlin] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php on line 14
+[17-Jan-2025 19:22:05 Europe/Berlin] PHP Warning:  Undefined array key 1 in D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php on line 13
+[17-Jan-2025 19:22:05 Europe/Berlin] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php on line 14
+[17-Jan-2025 19:22:05 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:22:05 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:22:05 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:25:13 Europe/Berlin] EmailService initialized successfully
+[17-Jan-2025 19:25:13 Europe/Berlin] Attempting to send email to: 01h30h301@gmail.com
+[17-Jan-2025 19:25:13 Europe/Berlin] Booking data: Array
+(
+    [first_name] => Sami
+    [roomName] => Room Zeta
+    [bookingDate] => January 18, 2025
+    [startTime] => 8:00 AM
+    [endTime] => 10:00 AM
+    [location] => 1st Floor
+    [Sender_Email] => chbinoumed06@gmail.com
+)
+
+[17-Jan-2025 19:25:13 Europe/Berlin] About to send email via SendGrid
+[17-Jan-2025 19:25:14 Europe/Berlin] SendGrid Response Status Code: 202
+[17-Jan-2025 19:25:14 Europe/Berlin] SendGrid Response Body: 
+[17-Jan-2025 19:25:14 Europe/Berlin] Email sent successfully
+[17-Jan-2025 19:25:14 Europe/Berlin] Email result: Array
+(
+    [success] => 1
+    [status] => 202
+    [message] => Email sent successfully
+)
+
+[17-Jan-2025 19:25:14 Europe/Berlin] Booking email failed: Email sent successfully
+[17-Jan-2025 19:25:14 Europe/Berlin] SendGrid status code: 202
+[17-Jan-2025 19:33:07 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:33:07 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:33:07 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:37:42 Europe/Berlin] Environment file not found: D:\Programs\xamp\htdocs\room-meetings\includes/sendgrid.env
+[17-Jan-2025 19:37:42 Europe/Berlin] #0 D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php(21): loadEnv('D:\\Programs\\xam...')
+#1 D:\Programs\xamp\htdocs\room-meetings\book_room.php(18): require_once('D:\\Programs\\xam...')
+#2 {main}
+[17-Jan-2025 19:38:20 Europe/Berlin] Environment file not found: D:\Programs\xamp\htdocs\room-meetings\includes.\sendgrid.env
+[17-Jan-2025 19:38:20 Europe/Berlin] #0 D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php(21): loadEnv('D:\\Programs\\xam...')
+#1 D:\Programs\xamp\htdocs\room-meetings\book_room.php(18): require_once('D:\\Programs\\xam...')
+#2 {main}
+[17-Jan-2025 19:40:06 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:40:06 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:40:06 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:43:40 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:43:40 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:43:40 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:44:47 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:44:47 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:44:47 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:47:08 Europe/Berlin] SendGrid API key is missing
+[17-Jan-2025 19:47:08 Europe/Berlin] EmailService initialization failed: SendGrid API key not found
+[17-Jan-2025 19:47:08 Europe/Berlin] Email sending error: SendGrid API key not found
+[17-Jan-2025 19:49:11 Europe/Berlin] EmailService initialization failed: Key SENDGRID_API_KEY not found in D:\Programs\xamp\htdocs\room-meetings\includes/../sendgrid.env
+[17-Jan-2025 19:49:11 Europe/Berlin] Email sending error: Key SENDGRID_API_KEY not found in D:\Programs\xamp\htdocs\room-meetings\includes/../sendgrid.env
+[17-Jan-2025 19:51:22 Europe/Berlin] EmailService initialization failed: Key SENDGRID_API_KEY not found in D:/Programs/xamp/htdocs/room-meetings/sendgrid.env
+[17-Jan-2025 19:51:22 Europe/Berlin] Email sending error: Key SENDGRID_API_KEY not found in D:/Programs/xamp/htdocs/room-meetings/sendgrid.env
+[17-Jan-2025 19:52:23 Europe/Berlin] EmailService initialization failed: Key SENDGRID_API_KEY not found in D:/Programs/xamp/htdocs/room-meetings/sendgrid.env
+[17-Jan-2025 19:52:23 Europe/Berlin] Email sending error: Key SENDGRID_API_KEY not found in D:/Programs/xamp/htdocs/room-meetings/sendgrid.env
+[17-Jan-2025 19:54:21 Europe/Berlin] Key SENDGRID_API_KEY not found in D:\Programs\xamp\htdocs\room-meetings\includes/../sendgrid.env
+[17-Jan-2025 19:54:21 Europe/Berlin] PHP Warning:  Undefined variable $apiKey in D:\Programs\xamp\htdocs\room-meetings\includes\EmailService.php on line 43
+[17-Jan-2025 19:54:21 Europe/Berlin] EmailService initialized successfully
+[17-Jan-2025 19:54:21 Europe/Berlin] Attempting to send email to: 01h30h301@gmail.com
+[17-Jan-2025 19:54:21 Europe/Berlin] Booking data: Array
+(
+    [first_name] => Sami
+    [roomName] => Room Beta
+    [bookingDate] => January 23, 2025
+    [startTime] => 8:00 AM
+    [endTime] => 10:00 AM
+    [location] => 2nd Floor
+    [Sender_Email] => chbinoumed06@gmail.com
+)
+
+[17-Jan-2025 19:54:21 Europe/Berlin] About to send email via SendGrid
+[17-Jan-2025 19:54:21 Europe/Berlin] SendGrid Response Status Code: 401
+[17-Jan-2025 19:54:21 Europe/Berlin] SendGrid Response Body: {"errors":[{"message":"Permission denied, wrong credentials","field":null,"help":null}]}
+[17-Jan-2025 19:54:21 Europe/Berlin] Email sending failed with status code: 401
+[17-Jan-2025 19:54:21 Europe/Berlin] Email result: Array
+(
+    [success] => 
+    [status] => 401
+    [message] => Failed to send email: {"errors":[{"message":"Permission denied, wrong credentials","field":null,"help":null}]}
+)
+
+[17-Jan-2025 19:55:43 Europe/Berlin] EmailService initialized successfully
+[17-Jan-2025 19:55:43 Europe/Berlin] Attempting to send email to: 01h30h301@gmail.com
+[17-Jan-2025 19:55:43 Europe/Berlin] Booking data: Array
+(
+    [first_name] => Sami
+    [roomName] => Room Omicron
+    [bookingDate] => January 29, 2025
+    [startTime] => 10:00 AM
+    [endTime] => 12:00 PM
+    [location] => West Wing
+    [Sender_Email] => chbinoumed06@gmail.com
+)
+
+[17-Jan-2025 19:55:43 Europe/Berlin] About to send email via SendGrid
+[17-Jan-2025 19:55:44 Europe/Berlin] SendGrid Response Status Code: 202
+[17-Jan-2025 19:55:44 Europe/Berlin] SendGrid Response Body: 
+[17-Jan-2025 19:55:44 Europe/Berlin] Email sent successfully
+[17-Jan-2025 19:55:44 Europe/Berlin] Email result: Array
+(
+    [success] => 1
+    [status] => 202
+    [message] => Email sent successfully
+)
+
+[17-Jan-2025 19:55:44 Europe/Berlin] Booking email failed: Email sent successfully
+[17-Jan-2025 19:55:44 Europe/Berlin] SendGrid status code: 202
+[17-Jan-2025 20:07:27 Europe/Berlin] EmailService initialized successfully
+[17-Jan-2025 20:07:27 Europe/Berlin] Attempting to send email to: mohamedsaid.chbinou@istic.ucar.tn
+[17-Jan-2025 20:07:27 Europe/Berlin] Booking data: Array
+(
+    [first_name] => Ahmed
+    [roomName] => Room Kappa
+    [bookingDate] => January 18, 2025
+    [startTime] => 10:00 AM
+    [endTime] => 12:00 PM
+    [location] => 4th Floor
+    [Sender_Email] => chbinoumed06@gmail.com
+)
+
+[17-Jan-2025 20:07:27 Europe/Berlin] About to send email via SendGrid
+[17-Jan-2025 20:07:28 Europe/Berlin] SendGrid Response Status Code: 202
+[17-Jan-2025 20:07:28 Europe/Berlin] SendGrid Response Body: 
+[17-Jan-2025 20:07:28 Europe/Berlin] Email sent successfully
+[17-Jan-2025 20:07:28 Europe/Berlin] Email result: Array
+(
+    [success] => 1
+    [status] => 202
+    [message] => Email sent successfully
+)
+
+[17-Jan-2025 20:07:28 Europe/Berlin] Booking email failed: Email sent successfully
+[17-Jan-2025 20:07:28 Europe/Berlin] SendGrid status code: 202

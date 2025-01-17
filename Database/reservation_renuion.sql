@@ -96,7 +96,31 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `created_at`) VA
 --
 -- Index pour les tables déchargées
 --
+-- Create `categories` table
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- Insert predefined categories
+INSERT INTO `categories` (`id`, `name`) VALUES
+(1, 'Conference Room'),
+(2, 'Lecture Hall'),
+(3, 'Lab'),
+(4, 'Auditorium');
+
+-- Modify `rooms` table to include a foreign key for `categories`
+ALTER TABLE `rooms`
+  ADD COLUMN `category_id` int(11) DEFAULT NULL,
+  ADD CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
+
+-- Update existing rooms with a default category
+UPDATE `rooms` SET `category_id` = 1 WHERE `id` IN (3, 4, 5); -- Set to 'Conference Room'
+
+-- Index adjustments
+ALTER TABLE `rooms`
+  ADD KEY `category_id` (`category_id`);
 --
 -- Index pour la table `bookings`
 --
